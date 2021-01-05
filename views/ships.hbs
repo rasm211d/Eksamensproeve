@@ -1,0 +1,74 @@
+<div class="d-flex flex-column">
+    <div class="align-self-center" style="width: 80%;">
+        <form method="POST" action="/ships">
+            <div class="form-group mb-2 mt-3    ">
+                <label for="exampleInputEmail1">Navn</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="Enter email">
+            </div>
+            <div class="form-group mb-2">
+                <label for="exampleInputPassword1">Hjemhavn</label>
+                <input type="password" class="form-control" id="hjemhavn" placeholder="Hjemhavn">
+            </div>
+            <div class="form-group mb-2">
+                <label for="hjemhavn">Kaldesignal</label>
+                <input type="text" class="form-control" id="kaldesignal" placeholder="Kaldesignal">
+            </div>
+            <div class="form-group mb-2">
+                <label for="MMSInummer">MMSInummer</label>
+                <input type="text" class="form-control" id="MMSInummer" placeholder="MMSInummer">
+            </div>
+            <div class="form-group mb-2">
+                <label for="Anvendelse">Anvendelse</label>
+                <input type="text" class="form-control" id="Anvendelse" placeholder="Anvendelse">
+            </div>
+            <div class="form-group mb-2">
+                <label for="BRT_BT">BRT/BT</label>
+                <input type="text" class="form-control" id="BRT_BT" placeholder="BRT/BT">
+            </div>
+            <div class="form-group mb-2">
+                <label for="længde">Længde</label>
+                <input type="text" class="form-control" id="længde" placeholder="Længde">
+            </div>
+            <div class="form-group mb-2">
+                <label for="makspersoner">Maks personer</label>
+                <input type="text" class="form-control" id="makspersoner" placeholder="Maks personer">
+            </div>
+
+            <button type="submit" class="btn btn-primary mt-2">Submit</button>
+        </form>
+    </div>
+    <h1 class="align-self-center mt-2">Skibe</h1>
+    <div class="align-self-center" style="width: 80%;" onload="getData()">
+        <table class="table">
+            <thead class="thead-dark">
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Navn</th>
+                    <th scope="col">Hjemhavn</th>
+                    <th scope="col">Kaldesignal</th>
+                    <th scope="col">MMSInummer</th>
+                    <th scope="col">Anvendelse</th>
+                    <th scope="col">BRT_BT</th>
+                    <th scope="col">Længde</th>
+                    <th scope="col">MaksPersoner</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Mark</td>
+                    <td>København</td>
+                    <td>OWYE</td>
+                    <td>219 000 446</td>
+                    <td>Skibet anvendes som øvelsesskib for FDF Københavns Søkreds</td>
+                    <td>43 tons</td>
+                    <td>18,5 meter</td>
+                    <td>24 personer</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <script src="../public/javascript/script.js"></script>
+
+</div>

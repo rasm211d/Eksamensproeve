@@ -10,7 +10,6 @@ const sensorSchema = new Schema({
     vindstyrke: String,
     temperatur: Number,
     motorRPM: Number
-
 })
 
 const Sensor = mongoose.model('Sensor', { sensorSchema })
