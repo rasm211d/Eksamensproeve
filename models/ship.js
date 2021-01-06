@@ -9,10 +9,10 @@ const shipSchema = new Schema({
     MMSInummer: Number,
     Anvendelse: String,
     BRT_BT: String,
-    Længde: String,
+    Laengde: String,
     MaksPersoner: String
 })
 
-const Ship = mongoose.model('Ship', { shipSchema })
+const Ship = mongoose.model('Ship', shipSchema)
 
 module.exports = Ship;
